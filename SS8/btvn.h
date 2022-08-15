@@ -3,6 +3,9 @@
 	
 	//viet ham tinh tong cac chu so cua 1 so nguyen
 int tongChuSo(int a){
+	if (a<0){
+		a=-a;
+	}
 	int s=0;
 	while(a>0){
 			s+=a%10;
