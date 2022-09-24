@@ -16,9 +16,11 @@ int main(){
 	scanf("%lf",&c);
 	
 	double s;
-	if(a+b>c && b+c>a && a+c>b){
-		s= tinhdientich(a,b,c);
-		printf("the area of triangle= %lf",s);
+	if(a>0 && b>0 && c>0){
+		if(a+b>c && b+c>a && a+c>b){
+			s= tinhdientich(a,b,c);
+			printf("the area of triangle= %lf",s);
+		}else printf("ERROR");
 	}else printf("ERROR");
 }
 
